@@ -1,19 +1,16 @@
 package lesson170624;
 
 public class FizzBuzz {
+    static String fizzBuzz(int i) {
 
-    public static void main(String[] args) {
-        System.out.println("start");
+        String result = "";
 
-        System.out.println(assertEquals("Hello", "Hello"));  //Hello - this is a string literal
-    }
-
-    public static boolean assertEquals(String actual, String expected) {
-        //FIXME fill the body - tracked comment
-        //TODO - tracked comment
-        return actual.equals(expected);
-        /* Not return actual == expected; Comparison operator always compares the values ​​of variables.
-
-         */
+        if (i % 3 == 0) {
+            result += "Fizz";
+        }
+        if (i % 5 == 0) {
+            result += "Buzz";
+        }
+        return "".equals(result) ? Integer.toString(i) : result; // ":" this is "else" result
     }
 }
