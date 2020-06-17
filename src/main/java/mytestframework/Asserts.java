@@ -1,6 +1,6 @@
-package lesson170624;
+package mytestframework;
 
-public class SimpleUnit {
+public class Asserts {
     public static boolean assertEquals(String actual, String expected) {
         //FIXME fill the body - tracked comment
         //TODO - tracked comment
@@ -25,12 +25,14 @@ public class SimpleUnit {
         if(!equals) {
             System.err.println("Test failed: expected " + expected + ", but actual " + actual);
         }
-        return equals;    }
+        return equals;
+    }
 
     public static boolean assertNotEquals(int actual, int expected) {
         boolean notEquals = actual != expected;
         if(!notEquals) {
             System.err.println("Test failed: expected NOT " + expected + ", but actual " + actual);
         }
-        return notEquals;    }
+        return notEquals;
+    }
 }
