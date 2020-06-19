@@ -9,4 +9,29 @@ public class Fields {
         final long timestamp = System.currentTimeMillis();
 
     }
+
+    static class B {
+
+        int i; //0
+//      final int j; // indefined
+
+        public void doIt(int x) { //formal parameter,
+                                  // real parameter variable will be assigned from active program
+
+        }
+
+        public void printIt(String x) {
+
+        }
+
+        public void printState() {
+            int x; //local variable need initialization. No default value
+            System.out.println(x);
+
+            int y = 0; //inited
+            System.out.println(y);
+
+        }
+
+    }
 }

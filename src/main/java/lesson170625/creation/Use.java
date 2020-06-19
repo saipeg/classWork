@@ -4,9 +4,10 @@ public class Use {
 
     public static void main(String[] args) {
 
- //       A a = new A();
+        A a = new A();
 
- //       System.out.println(a);
+        System.out.println(a);
+
         B b = new B();
 
         C c = new C(); // call to constructor
@@ -17,6 +18,8 @@ public class Use {
 
         new Z();
         new Z();
+
+        WholePicture.A a2 = new WholePicture.A();
 
 
     }
