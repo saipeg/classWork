@@ -26,7 +26,6 @@ public class Fields {
 
         public void printState() {
             int x; //local variable need initialization. No default value
-            System.out.println(x);
 
             int y = 0; //inited
             System.out.println(y);
